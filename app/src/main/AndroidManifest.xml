@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="projects.solucionescolabora.com.metodoasesores">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".MetodoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LogOrRegActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".RegistroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.RegistroConsultorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.RegistroConsultoresExpAcaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.RegistroConsultoresExpProActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Instituciones.RegistroInstitucionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instituciones.InstitucionesMainActivity"
+            android:label="@string/title_activity_instituciones_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Instituciones.InstitucionesMain2Activity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MiFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MiFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="metodoasesores" />
+
+        <activity
+            android:name=".Instituciones.CrearConvocatoriaMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.ConsultoresMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.CrearCursosConsulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.ConsultoresVerConvocatoriasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instituciones.InstitucionesVerConsultoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.PDFCVConsultoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.ConsultorVerPDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.RegistroReconocimientosConsulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consultores.VerMisCursosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instituciones.VerCurriculumsConsultoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Cuestinario.NecesidadRepresentanteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuestinario.NecesidadDatosEmpresaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuestinario.NecesidadCapitalHumanoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuestinario.NecesidadTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuestinario.EstatusActualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuestinario.OtrasAreasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Startups.RegistroStartupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Instituciones.VerTemariosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Instituciones.InstitucionesVerPostuladosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Instituciones.InstitucionesVerHistorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Instituciones.InstitucionesVerConfirmadosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Instituciones.InstitucionFinalizarConvActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Instituciones.InstitucionesVerConvFinalizadaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Consultores.ConsultoresHistorialActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

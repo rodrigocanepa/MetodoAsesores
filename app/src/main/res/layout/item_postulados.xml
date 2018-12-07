@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6sp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConsultoresGeneralPOSTULADOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="12sp">
+
+        <TextView
+            android:id="@+id/txtConsultoresNombrePOSTULADOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rodrigo Iván"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConsultoresEspecialidadPOSTULADOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConsultoresNombrePOSTULADOS"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            android:layout_below="@+id/txtConsultoresEspecialidadPOSTULADOS"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutConsultoresGeneralPOSTULADOS">
+
+        <Button
+            android:id="@+id/item_instituciones_ver_curriculumPOSTULADOS"
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:text="CURRICULUM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/item_instituciones_ver_temariosPOSTULADOS"
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:text="TEMARIOS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/item_instituciones_aceptar_postulacionPOSTULADOS"
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:text="CONTRATAR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

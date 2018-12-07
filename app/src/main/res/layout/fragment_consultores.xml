@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:padding="6sp"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Fragments.ConsultoresFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6sp"
+        android:gravity="center"
+        android:text="En esta sección se filtrarán por orden de importancia aquellos consultores que se encuentren registrados en la plataforma y cuya esoecialidad concuerde con tus puntos débiles."
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtro por especialidad"
+        android:textColor="@android:color/white"/>
+
+    <Spinner
+        android:id="@+id/spinnerFiltrosStartVerConsultoresEsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtro por ubicación"
+        android:textColor="@android:color/white"/>
+
+    <Spinner
+        android:id="@+id/spinnerFiltrosStartVerConsultoresUbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewConsultores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

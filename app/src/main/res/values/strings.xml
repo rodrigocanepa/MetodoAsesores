@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Método Asesores</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">290818364899466</string>
+
+    <string name="solcolLink">Aplicación desarrollada por la empresa <a href="http://www.solucionescolabora.com">Soluciones Colabora</a></string>
+    <string name="terminosLink">Al hacer click en Registrar estás aceptando nuestros<a href="http://www.solucionescolabora.com"> términos y condiciones</a></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_instituciones_main">InstitucionesMainActivity</string>
+</resources>

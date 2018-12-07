@@ -1,0 +1,126 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/side_nav_bar2">
+<!--
+            <ImageView
+                android:id="@+id/imgHomeFondo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+                -->
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="4dp"
+                app:slideInterval="6000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatarHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginBottom="60sp" />
+
+            <TextView
+                android:id="@+id/txtAvatarUsuarioNameHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10sp"
+                android:gravity="center"
+                android:textColor="#F5F5F5"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:shadowRadius="1"
+                tools:text="Rodrigo Canepa"/>
+
+            <TextView
+                android:id="@+id/txtAvatarStartupNameHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtAvatarUsuarioNameHome"
+                android:gravity="center"
+                android:textColor="#F5F5F5"
+                android:textStyle="bold"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:shadowRadius="1"
+                tools:text="Soluciones Colabora"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:id="@+id/linearDiagnostico"
+            android:padding="6sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="REALIZAR DIAGNÓSTICO"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabHomeStartupDiag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="20sp"
+        android:src="@drawable/ic_info_white_24dp"
+        android:layout_gravity="bottom|end"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

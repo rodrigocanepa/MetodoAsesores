@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:padding="6sp"
+    android:orientation="vertical"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Cuestinario.NecesidadTestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="5sp"
+        android:text="Por último menciona que servicios considera que pueden ser de mayor utilidad para usted según la urgencia de su empresa"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="34. Detección de fondos y financiamiento"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnReqFondosMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnReqFondosUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnReqFondosIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnReqFondosNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnReqFondosNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="35. Formalización de mi empresa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnFormalizacionMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnFormalizacionUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnFormalizacionIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnFormalizacionNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnFormalizacionNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="36. Creación de mi empresa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCreacionMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnCreacionUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnCreacionIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnCreacionNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnCreacionNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="37. Desarrollo de estrategias comerciales"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnEstrategiasMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnEstrategiasUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnEstrategiasIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnEstrategiasNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnEstrategiasNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="38. Análisis del estatus de mi empresa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnAnalEstatusMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnAnalEstatusUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnAnalEstatusIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnAnalEstatusNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnAnalEstatusNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="39. Protección legal y fiscal de mi empresa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnProtecLegalMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnProtecLegalUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnProtecLegalIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnProtecLegalNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnProtecLegalNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="40. Diseño digital o web"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDisenioMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDisenioUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDisenioIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnDisenioNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnDisenioNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="41. Estudio de mercado"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnEstMerMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnEstMerUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnEstMerIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnEstMerNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnEstMerNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="42. Desarrollo de manuales del servicio o procesos de producción"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDesManMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDesManUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDesManIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnDesManNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnDesManNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="43. Desarrollo de estados y proyecciones financieras"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDesEstadosMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDesEstadosUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnDesEstadosIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnDesEstadosNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnDesEstadosNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="44. Trámites de uso de suelo y licencia de funcionamiento"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnTramSueloMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnTramSueloUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnTramSueloIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnTramSueloNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnTramSueloNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="45. Comercialización de producto o servicio tradicional o digital"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnComercializacionMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnComercializacionUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnComercializacionIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnComercializacionNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnComercializacionNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="46. Servicio de community manager"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnComunnityMuyUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Muy Urgente"/>
+
+                <Button
+                    android:id="@+id/btnComunnityUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Urgente"/>
+
+                <Button
+                    android:id="@+id/btnComunnityIgual"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Da Igual"/>
+
+                <Button
+                    android:id="@+id/btnComunnityNoUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No urge"/>
+
+                <Button
+                    android:id="@+id/btnComunnityNadaUrg"
+                    android:layout_width="55sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="Nada"/>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editDiagnosticoNecesidad48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:hint="47. Otros, mencione cual o cuales"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editDiagnosticoNecesidad49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:hint="48. Comentarios"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnDiagnosticoNecesidadFinalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/transparent"
+                android:text="Siguiente"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

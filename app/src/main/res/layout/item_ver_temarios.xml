@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="6sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/item_ver_temarios_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Título"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especialidad"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/item_ver_temarios_especialidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Innovación y tecnología"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objetivo"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/item_ver_temarios_objetivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Desarrollar actividades"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_instituciones_ver_temario"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="VER TEMARIO COMPLETO"
+        android:layout_marginTop="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_marginBottom="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCalificarConsultores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="10sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/imgAvatarConsultoresCalificarConsultores"/>
+
+        <TextView
+            android:id="@+id/txtConsultoresNombreCalificarConsultores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgAvatarConsultoresCalificarConsultores"
+            tools:text="Rodrigo Iván"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConsultoresEspecialidadCalificarConsultores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgAvatarConsultoresCalificarConsultores"
+            android:layout_below="@+id/txtConsultoresNombreCalificarConsultores"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnCalificarConsultores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calificar"
+            android:layout_toRightOf="@id/imgAvatarConsultoresCalificarConsultores"
+            android:layout_below="@id/txtConsultoresEspecialidadCalificarConsultores"/>
+
+        <RatingBar
+            android:id="@+id/ratingCalificarConsultores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            android:layout_toRightOf="@id/imgAvatarConsultoresCalificarConsultores"
+            android:layout_below="@+id/txtConsultoresEspecialidadCalificarConsultores"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

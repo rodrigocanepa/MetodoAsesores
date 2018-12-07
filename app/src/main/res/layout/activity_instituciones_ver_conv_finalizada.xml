@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context=".Instituciones.InstitucionesVerConvFinalizadaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinTitutlo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asistentes"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinAsisentes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Día del evento"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locación"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinLocacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comentarios"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/verConvFinComentarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultores"
+                android:textColor="@android:color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerVerConvFinalizada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fotos"
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp">
+
+                <ImageView
+                    android:id="@+id/imgConvFinalizada1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/imgConvFinalizada2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/imgConvFinalizada3"
+                    android:layout_width="0dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

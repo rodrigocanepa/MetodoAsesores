@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorButtons"
+    android:layout_margin="6sp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tema"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subtemas"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="Duración"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="Materiales"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_txtNuevoCursoTema"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            tools:text="Tema"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/item_txtNuevoCursoSubtemas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="Subtemas"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/item_txtNuevoCursoDuracion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            tools:text="Tema"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/item_txtNuevoCursoMateriales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            tools:text="Se requiere proyector, lapices y piazarrón"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/item_nuevo_curso_delete"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:padding="5sp"
+            android:layout_marginRight="30sp"
+            android:src="@drawable/ic_delete_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/item_nuevo_curso_editar"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:padding="5sp"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/ic_edit_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

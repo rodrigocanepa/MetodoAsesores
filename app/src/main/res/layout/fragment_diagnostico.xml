@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Fragments.DiagnosticoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="4sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoNecesidad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/datosgenerales"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS GENERALES"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainDatosGenerales"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 48"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="4sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoEstatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/estatusactual"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTATUS ACTUAL"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainEstatus"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 60"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="4sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoOtras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/otrasareas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTRAS ÁREAS"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainOtrasAreas"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 30"/>
+
+    </RelativeLayout>
+
+    <!--
+    <Button
+        android:id="@+id/btnStartupMainDiagnosticoFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="4sp"
+        android:layout_marginRight="4sp"
+        android:layout_marginLeft="4sp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="GENERAR RESULTADOS"/>
+        -->
+
+</LinearLayout>

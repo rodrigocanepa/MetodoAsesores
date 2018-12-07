@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_diagnostico"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Diagnóstico" />
+        <item
+            android:id="@+id/nav_consultores"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Consultores" />
+        <item
+            android:id="@+id/nav_cursos"
+            android:icon="@drawable/ic_dvr_black_24dp"
+            android:title="Cursos" />
+    </group>
+
+    <item android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/nav_modificar_perfil"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Mi perfil" />
+            <!--
+            <item
+                android:id="@+id/nav_avances"
+                android:icon="@drawable/ic_show_chart_black_24dp"
+                android:title="Avances" />
+                -->
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>

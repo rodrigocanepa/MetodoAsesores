@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/side_nav_bar"
+    android:padding="6sp"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Instituciones.RegistroInstitucionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logo"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp">
+
+            <ImageView
+                android:id="@+id/imgRegistroInstitucionAvatar"
+                android:layout_width="150sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:scaleType="centerCrop"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtRegistroInstitucionNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:hint="Nombre"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtRegistroInstitucionRFC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:hint="RFC"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtRegistroInstitucionUbicación"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:hint="Ubicación (ejemplo: Mérida, Yucatán)"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtRegistroInstitucionDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textCapSentences"
+                    android:imeOptions="actionDone"
+                    android:hint="Descripción"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegistroInstitucionFinalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/borde_trans_blur"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

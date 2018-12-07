@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:padding="12sp"
+    tools:context=".Cuestinario.EstatusActualActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtAreaEstatusActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="ÁREA EN TURNO"
+            android:gravity="center"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:background="@color/colorButtons">
+
+            <TextView
+                android:id="@+id/txtEstatusActualPregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18sp"
+                android:textColor="@android:color/white"
+                tools:text="1. Esta es una prueba de la primera pregunta que estaré colocando en los textos."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEstatusActualSi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Si"/>
+
+            <Button
+                android:id="@+id/btnEstatusActualNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No"/>
+
+            <Button
+                android:id="@+id/btnEstatusActualNoSe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No sé"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEstatusActualSigPregunta"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Siguiente"/>
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/chartEstatusActualDiagnostico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

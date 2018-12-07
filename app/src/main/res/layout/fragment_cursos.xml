@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Fragments.CursosFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="4sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupCursosAtencionClientes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/atencionclientes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATENCIÓN A CLIENTES Y VENTAS"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp">
+
+        <ImageView
+            android:id="@+id/imgStartupCursosCapacidadEndeudamiento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/capacidadendeudamiento"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAPACIDAD DE ENDEUDAMIENTO FINANCIERO"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp">
+
+        <ImageView
+            android:id="@+id/imgStartupCursosInventarios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/inventarios"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INVENTARIOS"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp">
+
+        <ImageView
+            android:id="@+id/imgStartupCursosOperacionesContables"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/operacionescontables"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPERACIONES CONTABLES Y FINANZAS"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="4sp"
+        android:paddingRight="4sp">
+
+        <ImageView
+            android:id="@+id/imgStartupCursosFondosFinanciamiento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondosyfinanciamiento"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FONDOS Y FINANCIAMIENTO"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

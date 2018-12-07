@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConsultoresGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="12sp">
+
+        <ImageView
+            android:layout_width="90sp"
+            android:layout_height="65sp"
+            android:layout_marginRight="10sp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgAvatarConvocatorias"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaNombreInstitucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgAvatarConvocatorias"
+            tools:text="Rodrigo Iván"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgAvatarConvocatorias"
+            android:layout_below="@+id/txtConvocatoriaNombreInstitucion"
+            android:textStyle="italic"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaTitulo"
+            android:layout_toRightOf="@+id/imgAvatarConvocatorias"
+            tools:text="Piensa gtg"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaFechaPostulacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaUbicacion"
+            android:layout_toRightOf="@+id/imgAvatarConvocatorias"
+            tools:text="Piensa diferente"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaFechaEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaFechaPostulacion"
+            android:layout_toRightOf="@+id/imgAvatarConvocatorias"
+            tools:text="Piensa diferente"
+            android:textColor="@android:color/white"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutConsultoresGeneral">
+
+        <Button
+            android:id="@+id/btnVerDescripcionConvocatoria"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:text="VER MAS DETALLES"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginBottom="12sp"/>
+
+
+        <Button
+            android:id="@+id/btnPortularmeConvocatoria"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:layout_below="@+id/relativeLayoutConsultoresGeneral"
+            android:text="POSTULARME"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginBottom="12sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

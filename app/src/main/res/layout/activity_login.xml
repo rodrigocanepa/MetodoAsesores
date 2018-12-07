@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:padding="8sp"
+    android:orientation="vertical"
+    tools:context="projects.solucionescolabora.com.metodoasesores.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLoginLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/metodo_sin_fondo"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:textSize="14sp"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp"
+                android:layout_marginTop="12sp"
+                android:hint="Escribe tu email"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="15sp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/borde_redondeado_blur"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/editEmailLogin"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@android:color/white">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35sp"
+                    android:textSize="14sp"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="12sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="15sp"
+                    android:background="@drawable/borde_redondeado_blur"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:hint="Escribe tu contraseña"
+                    android:id="@+id/editPasswordLogin"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="12sp"
+                    android:textSize="11sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_alignParentRight="true"
+                    android:text="¿Olvidaste tu contraseña?"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:textSize="15sp"
+                android:text="INGRESAR"
+                android:textStyle="bold"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="24sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:background="@drawable/borde_white_blur"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOY"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10sp"
+            android:id="@+id/relativeLayout">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10sp">
+
+                <RadioButton
+                    android:id="@+id/radioConsultorLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="CONSULTOR"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <RadioButton
+                    android:id="@+id/radioInstuticionLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="INSTITUCIÓN"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="8sp">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_buttonFace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnFaceBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="35sp"
+                    android:background="@drawable/borde_trans_blur"
+                    android:paddingStart="8sp"
+                    android:paddingEnd="8sp"
+                    android:drawablePadding="6sp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableStart="@drawable/ic_facebook_app_symbol"
+                    android:text="INICIAR SESIÓN CON FACEBOOK"
+                    android:layout_margin="2sp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/relativeLayout">
+
+            <RadioButton
+                android:id="@+id/radioStartupLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtStartup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/radioStartup"
+                android:text="STARTUP"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConsultoresGeneralCONFIRMADOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="12sp">
+
+        <TextView
+            android:id="@+id/txtConsultoresNombreCONFIRMADOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rodrigo Iván"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConsultoresEspecialidadCONFIRMADOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConsultoresNombreCONFIRMADOS"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="5"
+            android:theme="@style/RatingBar"
+            android:layout_below="@+id/txtConsultoresEspecialidadCONFIRMADOS"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutConsultoresGeneralCONFIRMADOS">
+
+        <Button
+            android:id="@+id/item_instituciones_ver_curriculumCONFIRMADOS"
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:text="CURRICULUM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/item_instituciones_ver_temariosCONFIRMADOS"
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:text="TEMARIOS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

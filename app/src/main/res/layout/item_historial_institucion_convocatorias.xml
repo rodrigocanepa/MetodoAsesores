@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConsultoresGeneralINST_HISTORIAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:padding="12sp">
+
+
+        <TextView
+            android:id="@+id/txtConvocatoriaTituloINST_HISTORIAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaNombreInstitucion"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaStatusINST_HISTORIAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaTituloINST_HISTORIAL"
+            android:textSize="16sp"
+            tools:text="Tecnologia e Innovación"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaDescripcionINST_HISTORIAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaStatusINST_HISTORIAL"
+            tools:text="Piensa gtg"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaFechaPostulacionINST_HISTORIAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaDescripcionINST_HISTORIAL"
+            tools:text="Piensa diferente"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtConvocatoriaFechaEventoINST_HISTORIAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConvocatoriaFechaPostulacionINST_HISTORIAL"
+            tools:text="Piensa diferente"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:layout_below="@+id/relativeLayoutConsultoresGeneralINST_HISTORIAL">
+
+        <Button
+            android:id="@+id/btnINST_HISTORIAL_opcion1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="VER CONSULTORES POSTULADOS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginBottom="12sp"/>
+
+        <Button
+            android:id="@+id/btnINST_HISTORIAL_opcion2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="VER CONSULTORES CONFIRMADOS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginBottom="12sp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

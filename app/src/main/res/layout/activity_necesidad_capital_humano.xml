@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:padding="6sp"
+    tools:context="projects.solucionescolabora.com.metodoasesores.Cuestinario.NecesidadCapitalHumanoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6sp"
+        android:textColor="@android:color/white"
+        android:text="Capital Humano"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="27. ¿Usted o algún elemento del proyecto tiene experiencia sobre el producto o servicio?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad27Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad27No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editDiagnosticoNecesidad28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:hint="28. Número de integrantes del proyecto"
+                    android:textColor="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="29. ¿Estás dado de alta ante el IMSS como patrón?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad29Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad29No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="30. ¿Tienes a tu personal dado de alta ante IMSS?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad30Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad30No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="31. ¿Cuenta con prestaciones adicionales a la ley?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad31Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad31No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="32. ¿Tiene manuales de puestos?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad32Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad32No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="33. ¿Cuenta con reglamentos internos?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad33Si"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:background="@android:color/white"
+                    android:text="Si"/>
+
+                <Button
+                    android:id="@+id/btnDiagnosticoNecesidad33No"
+                    android:layout_width="75sp"
+                    android:layout_height="40sp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4sp"
+                    android:layout_marginLeft="4sp"
+                    android:background="@android:color/white"
+                    android:text="No"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSiguienteNecesidad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/transparent"
+                android:text="Siguiente"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
